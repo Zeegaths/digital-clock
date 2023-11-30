@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Monoton&display=swap">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Monoton', cursive;
+        }
+        h1, p
+        {
+            text-align: center;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="date">2023-09-19, Monday</h1>
+        <p id="time">03:51:50</p>
+    </div>
+    <script>
+        function tick () {
+            const dateOutput = document.getElementById('date');
+            const timeOutput = document.getElementById('time');
+
+            const currentDate = new Date();
+        }
+        
+        setInterval(tick, 1000)
+    </script>
+</body>
+</html>
